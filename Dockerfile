@@ -6,10 +6,10 @@ RUN apk --no-cache add libaio libnsl libc6-compat curl && \
     unzip instantclient-basiclite.zip && \
     mv instantclient*/ /usr/lib/instantclient && \
     rm instantclient-basiclite.zip && \
-    ln -s /usr/lib/instantclient/libclntsh.so.19.1 /usr/lib/libclntsh.so && \
-    ln -s /usr/lib/instantclient/libocci.so.19.1 /usr/lib/libocci.so && \
+    ln -s /usr/lib/instantclient/libclntsh.so.21.1 /usr/lib/libclntsh.so && \
+    ln -s /usr/lib/instantclient/libocci.so.21.1 /usr/lib/libocci.so && \
     ln -s /usr/lib/instantclient/libociicus.so /usr/lib/libociicus.so && \
-    ln -s /usr/lib/instantclient/libnnz19.so /usr/lib/libnnz19.so && \
+    ln -s /usr/lib/instantclient/libnnz21.so /usr/lib/libnnz21.so && \
     ln -s /usr/lib/libnsl.so.2 /usr/lib/libnsl.so.1 && \
     ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2 && \
     ln -s /lib64/ld-linux-x86-64.so.2 /usr/lib/ld-linux-x86-64.so.2
